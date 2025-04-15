@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AddContact.ContactDetails"
+             Title="ContactDetails">
+    <VerticalStackLayout>
+        <Label Text="Name: " ></Label>
+        <Entry Text="{Binding Name}" Placeholder="Name" IsReadOnly="True"></Entry>
+        <Label Text="Email: "></Label>
+        <Entry Text="{Binding Email}" Placeholder="Email" IsReadOnly="True"></Entry>
+        <Label Text="Phone Number: "></Label>
+        <Entry Text="{Binding PhoneNumber}" Placeholder="Phone Number" IsReadOnly="True"></Entry>
+        <Label Text="Description: "></Label>
+        <Entry Text="{Binding Description}" Placeholder="Description" IsReadOnly="True"></Entry>
+        <Button Text="Back" Clicked="Back_Clicked"></Button>
+    </VerticalStackLayout>
+</ContentPage>
